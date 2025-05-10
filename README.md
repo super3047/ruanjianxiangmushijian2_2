@@ -46,7 +46,7 @@ private fun takePhoto() {
         }
     )
 }
-### 编写 startCamera() 方法以及 ImageAnalysis 用例
+    编写 startCamera() 方法以及 ImageAnalysis 用例
 private fun startCamera() {
     val cameraProviderFuture = ProcessCameraProvider.getInstance(this)
     cameraProviderFuture.addListener({
@@ -86,7 +86,7 @@ private fun startCamera() {
         }
     }, ContextCompat.getMainExecutor(this))
 }
-###  实现 VideoCapture 用例
+  实现 VideoCapture 用例
 private fun captureVideo() {
     val videoCapture = this.videoCapture ?: return
     viewBinding.videoCaptureButton.isEnabled = false
